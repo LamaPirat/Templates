@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <span class="material-symbols-outlined"> menu </span>
+      <span class="material-symbols-outlined"> account_circle </span>
+    </div>
+
+    <h2>I want to Eat</h2>
+
+    <div class="menu-selectors">
+      <div class="selector">
+        <div class="selector-content">
+          <img src="./recourses/icons8-donut-64.png" data-selector alt="" />
+          <p>Donuts</p>
+        </div>
+      </div>
+      <div class="selector">
+        <div class="selector-content">
+          <img src="./recourses/icons8-burger-64.png" data-selector alt="" />
+          <p>Burgers</p>
+        </div>
+      </div>
+      <div class="selector">
+        <div class="selector-content">
+          <img src="./recourses/icons8-milkshake-64.png" data-selector alt="" />
+          <p>Milk shakes</p>
+        </div>
+      </div>
+      <div class="selector">
+        <div class="selector-content">
+          <img src="./recourses/icons8-pizza-64.png" data-selector alt="" />
+          <p>Pizza</p>
+        </div>
+      </div>
+      <div class="selector">
+        <div class="selector-content">
+          <img src="./recourses/icons8-pancake-64.png" data-selector alt="" />
+          <p>Pancakes</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="selected-display"></div>
+
+    <template id="item-template">
+      <div class="item-container">
+        <div class="price">
+          <p data-item-price></p>
+        </div>
+        <img class="item-image" data-item-image src="" alt="" />
+        <h4 class="item-name" data-item-name></h4>
+        <p class="item-origin" data-item-origin></p>
+        <div class="item-actions">
+          <span class="material-symbols-outlined"> star_rate </span>
+          <p class="item-add">Add</p>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
