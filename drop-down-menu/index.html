@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,12 +9,30 @@
     <title>Drop down menu</title>
   </head>
   <body>
-    <div class="drop-down-menu">
-      <button class="drop-down-button">Click me :)</button>
-      <div class="drop-down-content">
-        <a href="#">Option one</a>
-        <a href="#">Option two</a>
-        <a href="#">Option three</a>
+    <div class="drop-down" data-drop-down>
+      <button class="drop-down-button" data-drop-down-button>
+        Click me :)
+      </button>
+      <div class="drop-down-menu information-grid">
+        <div>
+          <div class="drop-down-heading">Services</div>
+          <div class="drop-down-links">
+            <a href="#" class="links">All</a>
+            <a href="#" class="links">Window cleaning</a>
+            <a href="#" class="links">Grass cutting</a>
+            <a href="#" class="links">Tree trimming</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="drop-down-heading">Services</div>
+          <div class="drop-down-links">
+            <a href="#" class="links">Prices</a>
+            <a href="#" class="links">Booking</a>
+            <a href="#" class="links">Reviews</a>
+            <a href="#" class="links">Contact form</a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
