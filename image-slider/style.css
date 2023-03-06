@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #191c22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  width: 100%;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  width: 990px;
+  height: 100%;
+  background-color: #191c22;
+  position: relative;
+  border: 2px solid darkred;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+
+.arrowContainer {
+  height: 100%;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  opacity: 0.5;
+  transition: opacity 250ms;
+  cursor: pointer;
+}
+
+.arrowContainer:hover {
+  opacity: 0.8;
+}
+
+.arrow {
+  width: auto;
+  height: 20%;
+}
+
+.arrow-right {
+  transform: rotate(180deg);
+}
